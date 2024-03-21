@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- header section starts  -->
+
+      <header>
+
+        <a href="#" class="logo"><i class="fa fa-calendar"></i>EMS</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about_us">about us</a>
+            <a href="#Events">events</a>
+            <a href="#gallery">gallery</a>
+            <a href="#Tickets">tickets</a>
+            <a href="#Contact_us">contact</a>
+        </nav>
+        <img src="assets/user.png" alt="user" class="user-pic" onclick="toggleMenu()">
+
+        <div class="sub-menu-wrap" id="subMenu">
+            <div class="sub-menu">
+                <div class="user-info">
+                    <img src="assets/user.png" alt="user">
+                    <h2>James Doe</h2>
+                </div>
+                <hr>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="assets/profile.png">
+                    <p>Update profile</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="assets/log-in.png">
+                    <p>log in</p>
+                    <span>></span>
+                </a>
+
+                <a href="#" class="sub-menu-link">
+                    <img src="assets/help.png">
+                    <p>help & support</p>
+                    <span>></span>
+                </a>
+
+                
+                <a href="#" class="sub-menu-link">
+                    <img src="assets/log-out.png">
+                    <p>log out</p>
+                    <span>></span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Built for the events of today and tomorrow</h3>
+            <p>Everything you need to craft impactful event experiences all while staying technologically relevant, now and always.</p>
+            <a href="#" class="btn">Book now</a>
+        </div>
+
+        <div class="image">
+            <img src="assets/event1_holi.jpeg" alt="">
+        </div>
+
+    </section>
+    <!-- home section ends -->
+
+    <!-- gallery section starts -->
+
+    <section class="gallery" id="gallery">
+      <h1 class="heading"> Event <span> gallery </span> </h1>
+
+      <div class="box-container">
+
+          <div class="box">
+              <img src="assets/gallery1.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery9.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery3.jpg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery2.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery7.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery5.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery6.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery8.jpeg" alt="">
+          </div>
+
+          <div class="box">
+              <img src="assets/gallery13.jpg" alt="">
+          </div>
+
+      </div>
+  </section>
+  <!-- gallery section ends -->
+
+  <script>
+    let subMenu = document.getElementById("subMenu");
+
+    function toggleMenu(){
+        subMenu.classList.toggle("open-menu");
+    }
+  </script>
+  <!-- note completed -->
+</body>
+</html>
